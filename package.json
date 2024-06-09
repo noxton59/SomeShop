@@ -1,0 +1,23 @@
+{
+  "name": "someshop",
+  "version": "1.0.0",
+  "description": "Some shop with products",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "Shop",
+    "products",
+    "Buy"
+  ],
+  "author": "Anton Zhdanov",
+  "license": "ISC",
+  "dependencies": {
+    "@seald-io/nedb": "^4.0.4",
+    "bootstrap-icons": "^1.11.3",
+    "express": "^4.19.2"
+  },
+  "type": "module"
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Cart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="Cart">
+    <link rel="stylesheet" href="cartStyle.css">
+    <link href="../bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="background-image"></div>
+    <button class="link-back-to-shop">Back to Shop</button>
+    <div class="cart-main-wrapper container col-12">
+      <div class="products-wrapper col-12 col-lg-8">
+        <div class="items-label">Items: <span class="items-quantity">0</span></div>
+        <div class="products-field"></div>
+      </div>
+      <div class="delivery-payment-wrapper col-12 col-lg-4">
+        <div class="delivery-wrapper">
+          <div class="delivery-label">Delivery options</div>
+          <div class="delivery-options"></div>
+        </div>
+        <div id="payment-gap"></div>
+        <div class="payment-wrapper">
+          <div class="order-label">Order summary</div>
+          <div class="payment-summary">
+            <div>Total items: <span class="total-items">0</span></div>
+            <div>Total summ: <span class="total-summ">0</span></div>
+            <div>Delivery date: <span class="delivery-date"></span></div>
+          </div>
+          <div class="order-button-wrapper">
+            <button class="order-button">Order</button>
+            <div class="order-warning hidden"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="cartScript.js" type="module"></script>
+    <script src="../bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

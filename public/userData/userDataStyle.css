@@ -1,0 +1,539 @@
+.background-image {
+  background: linear-gradient(180deg, rgba(63,86,138,1) 0%, rgba(0,109,166,1) 100%);
+  background-repeat: no-repeat;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.hidden {
+  display: none !important;
+}
+.link-back-to-shop {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: rgb(32, 142, 32);
+  color: white;
+}
+.link-back-to-shop:hover {
+  background-color: rgb(71, 167, 71);
+  box-shadow: 0px 0px 10px rgb(77, 231, 77);
+}
+.link-back-to-shop:active {
+  background-color: white;
+  color: rgb(32, 142, 32);
+  box-shadow: inset 0px 0px 10px rgb(77, 231, 77);
+}
+.user-info-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bottom-gap {
+  height: 200px;
+}
+
+.user-info-label {
+  margin: 30px auto 20px;
+  text-align: center;
+  font-size: 30px;
+  background-color: rgb(110, 175, 250);
+  color: white;
+  border-radius: 20px;
+  padding: 5px 20px;
+}
+.user-info-wrapper {
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+}
+.user-name-wrapper, .user-phone-wrapper, .user-address-wrapper, .user-cart-wrapper {
+  margin: 10px 10px;
+  border: 2px solid rgb(110, 175, 250);
+  padding: 5px 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.user-change-password-wrapper {
+  margin: 20px 10px 10px 10px;
+}
+.user-name-label, .user-phone-label, .user-address-label {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: rgb(183, 235, 255);
+  padding: 2px 10px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.user-name, .user-phone, .user-address, .user-cart {
+  margin-bottom: 10px;
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.user-cart {
+  margin-top: 10px;
+}
+.user-change-name-wrapper, .user-change-phone-wrapper, .user-change-address-wrapper, .go-to-cart-user {
+  margin-bottom: 10px;
+}
+
+.fade-in-3s {
+  animation: fadeIn 3s linear;
+}
+.fade-in-2s {
+  animation: fadeIn 2s linear;
+}
+@keyframes fadeIn {
+  0% {opacity: 1;}
+  50% {opacity: 0.9;}
+  100% {opacity: 0;}
+}
+
+/* change name field */
+
+.user-info-change-name-wrapper {
+  display: grid;
+  grid-template-columns: 120px 250px;
+  row-gap: 10px;
+  margin-bottom: 20px;
+  background-color: rgb(218, 218, 218);
+  padding: 10px;
+  border-radius: 20px;
+}
+.user-info-change-name-wrapper label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+#user-info-first-name-input, #user-info-second-name-input {
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 3px 10px;
+}
+.user-info-change-name-button-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 15px;
+  margin-left: 5px;
+  position: relative;
+}
+.user-name-change-button, .user-phone-change-button, .user-address-change-button, .go-to-cart-user {
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(0, 136, 255);
+  color: white;
+  padding: 3px 10px;
+}
+.user-name-change-button:hover, .user-phone-change-button:hover, .user-address-change-button:hover, .go-to-cart-user:hover {
+  background-color: rgb(0, 115, 255);
+  box-shadow: 0px 0px 10px rgb(0, 115, 255);
+}
+.user-name-change-button:active, .user-phone-change-button:active, .user-address-change-button:active, .go-to-cart-user:active {
+  background-color: rgb(0, 208, 255);
+}
+.user-info-change-name-button, .user-info-change-phone-button, .user-info-change-address-button, .user-info-previous-password-continue-button, .UINP-confirm-button {
+  border: none;
+  background-color: rgb(73, 186, 73);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.user-info-change-name-button:hover, .user-info-change-phone-button:hover, .user-info-change-address-button:hover, .user-info-previous-password-continue-button:hover, .UINP-confirm-button:hover {
+  color: white;
+  background-color: rgb(63, 231, 63);
+  box-shadow: 0px 0px 10px rgb(63, 231, 63);
+}
+.user-info-change-name-button:active, .user-info-change-phone-button:active, .user-info-change-address-button:active, .user-info-previous-password-continue-button:active, .UINP-confirm-button:active {
+  color: rgb(63, 231, 63);
+  background-color: white;
+  box-shadow: inset 0px 0px 10px rgb(63, 231, 63);
+}
+
+.user-info-change-name-cancel-button, .user-info-change-phone-cancel-button, .user-info-change-address-cancel-button, .UIPP-cancel-button, .UINP-cancel-button {
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  background-color: rgba(255, 59, 59, 0.866);
+  color: white;
+}
+.user-info-change-name-cancel-button:hover, .user-info-change-phone-cancel-button:hover, .user-info-change-address-cancel-button:hover, .UIPP-cancel-button:hover, .UINP-cancel-button:hover {
+  background-color: rgb(254, 30, 30);
+  box-shadow: 0px 0px 10px rgb(254, 30, 30);
+}
+.user-info-change-name-cancel-button:active, .user-info-change-phone-cancel-button:active, .user-info-change-address-cancel-button:active, .UIPP-cancel-button:active, .UINP-cancel-button:active {
+  color: rgba(255, 32, 32, 0.866);
+  background-color: white;
+  box-shadow: inset 0px 0px 10px rgba(255, 32, 32, 0.866);
+}
+.user-info-change-name-warning-msg, .UIPP-warning, .UINP-warning {
+  z-index: 2;
+  background-color: rgb(205, 0, 0);
+  color: white;
+  padding: 5px 15px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+/* change phone field and change address field */
+
+.user-info-change-phone-field, .user-info-change-address-field {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: rgb(218, 218, 218);
+  border-radius: 10px;
+}
+.user-info-change-phone-field label, .user-info-change-address-field label {
+  cursor: pointer;
+}
+#user-info-change-phone-input, #user-info-change-address-input {
+  border-radius: 10px;
+  padding: 3px 10px;
+}
+#user-info-change-address-input {
+  width: 600px;
+}
+.user-info-change-phone-button-wrapper, .user-info-change-address-button-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 15px;
+  position: relative;
+  margin-left: 5px;
+}
+.user-info-change-phone-warning, .user-info-change-address-warning {
+  position: absolute;
+  left: 220px;
+  white-space: nowrap;
+  background-color: rgb(205, 0, 0);
+  color: white;
+  padding: 5px 15px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+.user-info-change-address-warning {
+  left: 230px;
+}
+
+/* change password */
+.user-change-password-wrapper {
+  position: relative;
+}
+.user-change-password-button {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: rgb(30, 3, 66);
+  color: white;
+  margin-left: 10px;
+}
+.user-change-password-button:hover {
+  background-color: rgb(75, 0, 173);
+  box-shadow: 0px 0px 10px rgb(75, 0, 173);
+}
+.user-change-password-button:active {
+  background-color: white;
+  color: rgb(75, 0, 173);
+  box-shadow: inset 0px 0px 10px rgb(75, 0, 173);
+}
+.user-info-previous-password {
+  display: inline-block;
+  padding: 10px;
+  background-color: rgb(60, 91, 111);
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.user-info-previous-password label {
+  margin-right: 15px;
+}
+#user-info-previous-password-input {
+  border-radius: 10px;
+  padding: 3px 10px;
+}
+.user-info-previous-password-button-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 15px;
+  margin-left: 5px;
+}
+.UINP-wrapper {
+  display: inline-block;
+}
+.UINP-field {
+  display: grid;
+  grid-template-columns: 150px 200px;
+  row-gap: 10px;
+  background-color: rgb(60, 91, 111);
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+#UIFP-input, #UISP-input {
+  border-radius: 10px;
+  padding: 3px 10px;
+}
+.UINP-button-wrapper {
+  display: flex;
+  flex-direction: row;
+  column-gap: 15px;
+  margin-left: 10px;
+}
+.pass-changed {
+  position: absolute;
+  padding: 50px 70px;
+  border-radius: 20px;
+  font-size: 25px;
+  font-weight: 600;
+  background-color: rgb(0, 159, 0);
+  color: white;
+  top: 10px;
+  left: 10px;
+}
+
+/* delete profile field */
+
+.user-delete-profile-wrapper {
+  margin-left: 10px;
+}
+.user-delete-profile-button {
+  padding: 5px 15px;
+  border: 2px solid red;
+  background-color: white;
+  color: red;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.user-delete-profile-button:hover {
+  box-shadow: inset 0px 0px 10px red;
+}
+.user-delete-profile-button:active {
+  background-color: red;
+  color: white;
+}
+.UICD-wrapper {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  background-color: rgb(60, 91, 111);
+  color: white;
+  border-radius: 10px;
+}
+.UICDText {
+  margin-bottom: 10px;
+  border: 2px solid red;
+  border-radius: 10px;
+  padding: 10px;
+}
+.UICD-password-wrapper {
+  display: flex;
+  flex-direction: row;
+  column-gap: 15px;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.UICD-password-wrapper label {
+  cursor: pointer;
+}
+#UICD-password-input {
+  border-radius: 10px;
+  padding: 3px 10px;
+}
+.UICD-button-wrapper {
+  display: flex;
+  flex-direction: row;
+  column-gap: 15px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.UICD-button {
+  border: none;
+  border-radius: 10px;
+  padding: 5px 15px;
+  background-color: rgb(193, 69, 69);
+  color: white;
+}
+.UICD-button:hover {
+  background-color: rgb(254, 30, 30);
+  box-shadow: 0px 0px 10px rgb(254, 30, 30);
+}
+.UICD-button:active {
+  color: rgba(255, 32, 32);
+  background-color: white;
+  box-shadow: inset 0px 0px 10px rgba(255, 32, 32);
+}
+.UICD-cancel-button {
+  border: 2px solid rgb(0, 136, 255);
+  border-radius: 10px;
+  padding: 5px 15px;
+  background-color: white;
+  color: rgb(0, 136, 255);
+}
+.UICD-cancel-button:hover {
+  box-shadow: inset 0px 0px 10px rgb(0, 42, 255);
+}
+.UICD-cancel-button:active {
+  color: white;
+  background-color: rgb(0, 136, 255);
+}
+.UICD-warning {
+  position: absolute;
+  white-space: nowrap;
+  background-color: rgb(205, 0, 0);
+  color: white;
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+.UICD-success {
+  position: absolute;
+  border-radius: 20px;
+  padding: 50px;
+  background-color: rgb(193, 69, 69);
+  color: white;
+  font-weight: 600;
+  font-size: 30px;
+  top: 0px;
+  margin: 2% 15%;
+}
+@media (max-width: 1150px) {
+  .user-change-address-wrapper {
+    width: 100%;
+  }
+  .user-info-change-address-field {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    width: 100%;
+  }
+  #user-info-change-address-input {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .user-info-wrapper {
+    padding: 10px;
+  }
+  .user-info-change-name-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-bottom: 20px;
+    background-color: rgb(218, 218, 218);
+    padding: 10px;
+    border-radius: 20px;
+  }
+  .user-name {
+    margin-bottom: 10px;
+    display: inline-block;
+    padding: 0px;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+  .user-info-change-name-warning-msg {
+    position: absolute;
+    bottom: -40px;
+    left: 0px;
+  }
+  .user-info-change-phone-field {
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+    align-items: start;
+  }
+  .user-info-change-phone-warning {
+    position: absolute;
+    bottom: -40px;
+    left: 0px;
+    white-space: nowrap;
+  }
+  .user-info-change-address-field {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    column-gap: 10px;
+    width: 100%;
+  }
+  .user-info-change-address-warning {
+    position: absolute;
+    bottom: -40px;
+    left: 0px;
+  }
+  .UIPP-warning, .UINP-warning {
+    position: absolute;
+    bottom: -40px;
+    left: 0px;
+  }
+  .UINP-button-wrapper {
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+    margin-left: 0px;
+  }
+  .UINP-field {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    background-color: rgb(60, 91, 111);
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  .UICD-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  .UICD-password-wrapper {
+    display: flex;
+    flex-direction: column;
+    column-gap: 15px;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .UICD-success {
+    position: absolute;
+    border-radius: 20px;
+    padding: 30px;
+    font-size: 20px;
+    top: auto;
+    bottom: 20px;
+  }
+}
+@media (max-width: 300px) {
+  .user-info-change-address-button-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    column-gap: 0px;
+    row-gap: 10px;
+    position: relative;
+    margin-left: 5px;
+  }
+  
+}

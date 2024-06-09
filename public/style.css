@@ -1,0 +1,430 @@
+.hidden {
+  display: none !important;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 20px;
+  background: linear-gradient(180deg, rgba(70,165,187,1) 0%, rgb(74, 90, 145) 100%);
+}
+.shop-name {
+  margin-right: 50px;
+  margin-left: 20px;
+  font-size: 50px;
+  font-family: "Dancing Script", cursive;
+  font-weight: 500;
+  font-style: normal;
+  background: linear-gradient(90deg, rgba(0,255,8,1) 0%, rgba(0,163,249,1) 54%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  cursor: pointer;
+}
+.search-login-field {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.search-field-main {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  width: 40%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.search-input-main {
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  border: 1px solid black;
+  width: 90%;
+  outline: none;
+  cursor: pointer;
+}
+.search-input-main:focus {
+  box-shadow: inset 0px 0px 5px rgba(0,163,249,1);
+}
+.search-button-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 20px;
+  border-radius: 0px 10px 10px 0px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  cursor: pointer;
+}
+.search-button-main:hover {
+  color: white;
+  background-color: rgb(129, 206, 248);
+}
+.cart-field-main {
+  margin-right: 10px;
+  cursor: pointer;
+  position: relative;
+}
+.cart-field-main:hover {
+  color: white;
+}
+.cart-count-div {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: blue;
+  color: white;
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  border-radius: 50%;
+  font-weight: 600;
+}
+.cart-menu-main {
+  position: absolute;
+  top: 50px;
+  left: -150px;
+  color: white;
+  width: 200px;
+  background: linear-gradient(270deg, rgba(0,135,135,1) 44%, rgba(0,58,179,1) 100%);
+  padding: 10px 15px;
+  font-size: 20px;
+  border-radius: 20px;
+}
+.login-button-main, .sign-up-button-main, .cart-info-main {
+  padding: 3px 10px;
+  border-radius: 10px;
+}
+.login-button-main:hover {
+  background-color: rgb(0, 175, 96);
+}
+.sign-up-button-main:hover {
+  background-color: rgb(0, 123, 255);
+}
+.cart-info-main:hover {
+  background-color: rgb(234, 234, 62);
+  color: black;
+}
+.cart-info-main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.go-to-cart-link {
+  width: 100%;
+}
+.cart-description {
+  font-size: 16px;
+  width: 100%;
+}
+.go-to-cart-warning {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: rgb(205, 0, 0);
+  position: absolute;
+  top: 0px;
+}
+
+/* sign up menu */
+
+.black-background {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sign-up-field {
+  padding: 20px 30px;
+  background: linear-gradient(0deg, rgba(0,50,105,1) 0%, rgb(0, 119, 126) 45%);
+  border-radius: 20px;
+}
+.sign-up-label {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+}
+.sign-up-data {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.user-email-label, .user-name-label, .user-phone-label, .user-address-label, .user-first-password-label, .user-second-password-label {
+  margin-right: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#user-email-input:focus, #user-first-name-input:focus, #user-second-name-input:focus, #user-phone-input:focus, #user-address-input:focus, #user-first-password-input:focus, #user-second-password-input:focus {
+  box-shadow: inset 0px 0px 10px rgba(0,163,249,1);
+}
+.sign-up-buttons-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  margin-top: 40px;
+}
+.sign-up-button {
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  background-color: rgb(0, 115, 255);
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+}
+.sign-up-button:hover {
+  background-color: rgb(0, 195, 255);
+  color: white;
+  box-shadow: 0px 0px 10px rgb(0, 179, 255);
+}
+.sign-up-button:active {
+  background-color: white;
+  box-shadow: inset 0px 0px 10px rgb(0, 94, 255);
+  color: rgb(0, 136, 255);
+}
+.cancel-sign-up-button {
+  border: none;
+  border-radius: 10px;
+  padding: 5px 15px;
+  background-color: rgba(255, 59, 59, 0.866);
+  color: white;
+  font-weight: 700;
+}
+.cancel-sign-up-button:hover {
+  background-color: rgb(254, 30, 30);
+  box-shadow: 0px 0px 10px rgb(254, 30, 30);
+}
+.cancel-sign-up-button:active {
+  color: rgba(255, 32, 32, 0.866);
+  background-color: white;
+  box-shadow: inset 0px 0px 10px rgba(255, 32, 32, 0.866);
+}
+.sign-up-warning-msg {
+  position: absolute;
+  top: -37px;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0px 10px;
+  border-radius: 10px;
+  background-color: rgb(205, 0, 0);
+  color: white;
+}
+.reg-success-field {
+  padding: 100px 70px;
+  color: white;
+  background-color: rgb(0, 123, 255);
+  font-size: 30px;
+  font-weight: 700;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fade-in-3s {
+  animation: fadeIn 3s linear;
+}
+.fade-in-2s {
+  animation: fadeIn 2s linear;
+}
+@keyframes fadeIn {
+  0% {opacity: 1;}
+  50% {opacity: 0.9;}
+  100% {opacity: 0;}
+}
+
+/* login menu */
+
+.login-field {
+  padding: 20px 30px;
+  border-radius: 20px;
+  background: linear-gradient(180deg, rgb(0, 171, 63) 0%, rgba(0,109,166,1) 100%);
+}
+.login-label {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+}
+.login-data {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.login-buttons-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  margin-top: 40px;
+  align-items: center;
+  justify-content: center;
+}
+.login-button {
+  padding: 3px 15px;
+  border: none;
+  background-color: rgb(0, 185, 0);
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+.login-button:hover {
+  background-color: rgb(0, 229, 0);
+  box-shadow: 0px 0px 10px rgb(0, 229, 0);
+}
+.login-button:active {
+  background-color: white;
+  color: rgb(0, 229, 0);
+}
+.cancel-login-button {
+  padding: 3px 15px;
+  border: none;
+  background-color: rgba(255, 59, 59, 0.866);
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+}
+.cancel-login-button:hover {
+  background-color: rgb(254, 30, 30);
+  box-shadow: 0px 0px 10px rgb(254, 30, 30);
+}
+.cancel-login-button:active {
+  color: rgba(255, 32, 32, 0.866);
+  background-color: white;
+  box-shadow: inset 0px 0px 10px rgba(255, 32, 32, 0.866);
+}
+.login-warning-msg {
+  position: absolute;
+  top: -35px;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0px 10px;
+  border-radius: 10px;
+  background-color: rgb(205, 0, 0);
+  color: white;
+}
+.remember-me-field {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.remember-me-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+}
+.remember-me-wrapper:hover {
+  background-color: rgb(67, 185, 224);
+  border-radius: 20px;
+}
+#remember-me-input {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.remember-me-label {
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+.login-success {
+  padding: 70px 70px;
+  background-color: rgb(0, 201, 0);
+  font-size: 25px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+}
+.user-name-wrapper {
+  padding: 3px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.user-name-wrapper:hover {
+  background-color: lightblue;
+}
+.log-out-button {
+  padding: 3px 10px;
+  border-radius: 10px;
+}
+.log-out-button:hover {
+  background-color: pink;
+}
+@media (max-width: 1000px) {
+  .search-field-main {
+    width: 60%;
+  }
+}
+@media (max-width: 800px) {
+  .search-field-main {
+    width: 80%;
+  }
+  .shop-name {
+    margin-right: 30px;
+    margin-left: 20px;
+  }
+}
+@media (max-width: 700px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(180deg, rgba(70,165,187,1) 0%, rgb(74, 90, 145) 100%);
+  }
+  .reg-success-field {
+    padding: 50px 30px;
+    color: white;
+    background-color: rgb(0, 123, 255);
+    font-size: 30px;
+    font-weight: 600;
+  }
+}
+@media (max-width: 300px) {
+  .cart-field-main {
+    margin-right: 0px;
+  }
+  .reg-success-field {
+    padding: 50px 20px;
+    color: white;
+    background-color: rgb(0, 123, 255);
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .login-success {
+    padding: 50px 20px;
+    background-color: rgb(0, 201, 0);
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
